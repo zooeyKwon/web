@@ -31,11 +31,11 @@
 <body>
   <input type="button" id="authBtn" value="checking..." onclick="
   if(this.value == 'Login'){ // now logout
-    FB.login(function(response){
+    FB.login(function(res){
     console.log('login =>', res);
     });
   } else { // now login
-    FB.logout(function(response){
+    FB.logout(function(res){
     console.log('logout =>', res);
     });
   }
